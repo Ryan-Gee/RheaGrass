@@ -1,6 +1,6 @@
 # Rhea - Geometry Shader Grass
 
-**Rhea** is a geometry-shader based grass shader for Unity's [Universal Render Pipeline](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@11.0/manual/) (URP).
+**Rhea** is a geometry-shader based grass for Unity's [Universal Render Pipeline](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@11.0/manual/) (URP).
 
 ## Features
 
