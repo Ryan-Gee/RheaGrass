@@ -1,0 +1,49 @@
+﻿<UXML xmlns:ui="UnityEngine.Experimental.UIElements">
+  <ui:VisualElement class="flex-container main">
+    <ui:Image name="buho" />
+    
+    <ui:VisualElement name="signUpForm">
+      <ui:Label text="Sign Up" name="signUpLabel" class="title" />
+
+      <ui:VisualElement name="email">
+        <ui:TextField name="emailField" class="column" label="Email:" password="false"/>
+        <ui:Label name="emailNotification" class="hidden" />
+      </ui:VisualElement>
+      
+      <ui:VisualElement name="password" class="row">
+        <ui:TextField name="passwordField" class="column password" label="Password:" password="true"/>
+        <ui:TextField name="confirmPasswordField" class="column password" label="Confirm Password:" password="true"/>
+      </ui:VisualElement>
+      <ui:Label name="passwordNotificationLabel" class="hidden" />
+
+      <ui:Button name="signUp" />
+
+      <ui:VisualElement name="policyContainer" class="row">
+        <ui:Label name="signUpAgreePt1" />
+        <ui:Button name="termsOfService" class="anchor" />
+        <ui:Label name="signUpAgreePt2" />
+        <ui:Button name="privacyPolicy" class="anchor" />
+      </ui:VisualElement>
+
+      <ui:VisualElement name="median" class="row horizontally-centered">
+        <ui:VisualElement name="dash" class="dash" />
+        <ui:Label name="or" />
+        <ui:VisualElement name="dash" class="dash" />
+      </ui:VisualElement>
+
+      <ui:VisualElement name="otherSignUpOptions" class="row">
+        <ui:Button name="unityIDButton" class="alternate-button"> 
+          <ui:Image name="unityIcon" class="icon" />
+        </ui:Button>
+        
+        <ui:Button name="googleButton" class="alternate-button">
+          <ui:Image name="googleIcon" class="icon" />
+        </ui:Button>
+      </ui:VisualElement>
+    </ui:VisualElement>
+  </ui:VisualElement>
+  <ui:VisualElement class="footer">
+    <ui:Label name="privacyStatementText" />
+    <ui:Button name="privacyStatement" class="anchor" />
+  </ui:VisualElement>
+</UXML>

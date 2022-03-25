@@ -1,0 +1,28 @@
+﻿<UXML xmlns="UnityEngine.UIElements">
+    <VisualElement class="flex-container main">
+            <Image name="buho" />
+        <VisualElement class="form">
+            <Label name="createLabel" class="title" />
+            <VisualElement class="field">
+                <TextField name="orgName"/>
+                <Label name="orgNameNotification" class="notification"/>
+            </VisualElement>
+            <VisualElement name="datacenter" class="field">
+                <Label name="datacenterLabel" class="field-label"/>
+            </VisualElement>
+            <VisualElement class="field">
+                <Toggle name="encryptData" />
+                <Label name="encryptExplanation"/>
+                <Button name="encryptLearnMore" class="anchor"/>
+            </VisualElement>
+        </VisualElement>
+    </VisualElement>
+    <VisualElement name="gettingDatacenters" class="hidden">
+        <VisualElement name="gdSpinner"/>
+        <Label name="gdLabel" />
+    </VisualElement>
+    <VisualElement class="footer">
+        <Button name="back" />
+        <Button name="create" />
+    </VisualElement>
+</UXML>

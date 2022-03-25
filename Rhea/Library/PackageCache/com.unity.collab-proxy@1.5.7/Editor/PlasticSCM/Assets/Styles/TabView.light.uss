@@ -1,0 +1,12 @@
+#TabArea {
+    background-color: #a5a5a5;
+}
+
+Button {
+    background-color: #a5a5a5;
+}
+
+    Button.active {
+        background-color: #cbcbcb;
+        border-bottom-color: #cbcbcb;
+    }

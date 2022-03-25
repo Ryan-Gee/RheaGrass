@@ -1,0 +1,92 @@
+﻿/* Basic Classes */
+.row {
+	flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.horizontally-centered {
+    justify-content: center;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+SignUp {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    padding: 20px 0;
+    height: 100%;
+}
+
+#signUpForm {
+    width: 420px;
+}
+
+#email {
+    margin-bottom: 20px;
+}
+
+TextField {
+    flex-direction: column;
+    font-size: 14px;
+}
+
+#password {
+    height: 42px;
+}
+
+.password {
+    width: 48.5%;
+    margin-bottom: 1px;
+}
+
+#signUp {
+    margin-top: 20px;
+    height: 30px;
+}
+
+#policyContainer {
+    margin: 5px;
+    margin-left: -8px;
+}
+
+#median {
+    margin-top: 15px;
+    margin-left: -8px;
+}
+
+.dash {
+    border-top-width: 0.5px;
+    border-color: rgba(196, 196, 196, 1);
+    width: 49%;
+    height: 1px;
+    margin: 8px 3px 8px 3px;
+}
+
+.alternate-button {
+    width: 48.5%;
+    height: 30px;
+}
+
+.icon {
+    height: 25px;
+    width: 25px;
+}
+
+#unityIDButton {
+    color: white;
+    background-color: black;
+}
+
+#googleButton {
+    color: black;
+    background-color: rgba(66, 133, 244, 1);
+}
