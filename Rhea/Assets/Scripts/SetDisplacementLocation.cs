@@ -14,7 +14,6 @@ public class SetDisplacementLocation : MonoBehaviour
 
 	void Update()
     {
-		//mat.SetVector("_DisplacementCenter", target.position);
 		Shader.SetGlobalVector("_DisplacementCenter", m_transform.position);
 	}
 }
