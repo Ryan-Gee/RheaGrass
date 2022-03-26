@@ -3,6 +3,7 @@
 **Rhea** is a geometry-shader based grass for Unity's [Universal Render Pipeline](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@11.0/manual/) (URP).
 
 ![screenshot](https://github.com/Ryan-Gee/GeometryGrass/blob/main/Media/hero-image.gif)
+![screenshot](https://github.com/Ryan-Gee/GeometryGrass/blob/main/Media/grass-displacement.gif)
 
 
 
@@ -11,6 +12,9 @@
 *   Procedural and atlas-based texturing
     *   Atlas biasing for non-uniform texture distribution
     *   Vertex color tinting
+
+![screenshot](https://github.com/Ryan-Gee/GeometryGrass/blob/main/Media/vertex-color.png)
+
 *   Customizable blade shape and warping
 *   View-based tessellation for increasing grass density efficiently
 *   Texture-based trimming and height mapping
@@ -18,6 +22,9 @@
 *   Object-based displacement
 *   Normal-based spawning and jittering
     *   Works well on non-planar meshes such as spheres, sharp terrain, etc
+
+![screenshot](https://github.com/Ryan-Gee/GeometryGrass/blob/main/Media/grass-ball.gif)
+
 
 ## Usage
 
