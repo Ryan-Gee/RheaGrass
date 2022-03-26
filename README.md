@@ -25,7 +25,7 @@
 ## Usage
 
 *   Several example materials are included, with examples of texture atlasing and procedural setups
-*   For object displacement, attach the SetDisplacementLocation.cs script to your player, or the object that grass should be displaced from
+*   For object displacement, attach the [SetDisplacementLocation.cs](https://github.com/Ryan-Gee/GeometryGrass/blob/main/Rhea/Assets/Scripts/SetDisplacementLocation.cs) script to your player, or the object that grass should be displaced from
 *   The grass height map and wind vector map can be set to RenderTextures instead, allowing for a trail of grass following an object, dynamic wind from real-time flowmaps, or pre-baked height maps
 *   Use of this asset is subject to the [GNU General Public License V3](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
