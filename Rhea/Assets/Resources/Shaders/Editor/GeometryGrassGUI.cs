@@ -147,8 +147,16 @@ public class GeometryGrassGUI : ShaderGUI
 		MaterialProperty _TessellationGrassDist = ShaderGUI.FindProperty("_TessellationGrassDist", properties);
 		materialEditor.ShaderProperty(_TessellationGrassDist, "Density");
 
-		MaterialProperty _TessellationViewDistance = ShaderGUI.FindProperty("_TessellationViewDistance", properties);
-		materialEditor.ShaderProperty(_TessellationViewDistance, "View Distance");
+		MaterialProperty _TessellationViewMin = ShaderGUI.FindProperty("_TessellationViewMin", properties);
+		MaterialProperty _TessellationViewMax = ShaderGUI.FindProperty("_TessellationViewMax", properties);
+		float distMin = _TessellationViewMin.floatValue;
+		float distMax = _TessellationViewMax.floatValue;
+		EditorGUILayout.MinMaxSlider("View Distance", ref distMin, ref distMax, 0.0f, 100);
+		if (EditorGUI.EndChangeCheck())
+		{
+			_TessellationViewMin.floatValue = distMin;
+			_TessellationViewMax.floatValue = distMax;
+		}
 
 		EditorGUI.indentLevel--;
 		EditorGUILayout.Space();

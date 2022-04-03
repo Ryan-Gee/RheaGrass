@@ -46,8 +46,10 @@ Shader "Custom/GeometryGrass"
 
 		//Overall tessellation depth
 		_TessellationGrassDist("Tessellation Grass Distance", Range(0.1, 2)) = 0.9
-		//Tessellation view distance factor
-		_TessellationViewDistance("Tessellation View Distance", Range(1, 100)) = 100
+		//Tessellation view distance minimum weighting
+		_TessellationViewMin("Tessellation Minimum View Distance", Range(1, 100)) = 20
+		//Tessellation view distance maximum weighting
+		_TessellationViewMax("Tessellation Maximum View Distance", Range(1, 100)) = 100
 
 		//Grass trimming pixel map
 		_GrassMap("Grass Map", 2D) = "white" {}
@@ -107,7 +109,8 @@ Shader "Custom/GeometryGrass"
 		float _BladeJitter;
 		float _BendDelta;
 		float _TessellationGrassDist;
-		float _TessellationViewDistance;
+		float _TessellationViewMin;
+		float _TessellationViewMax;
 
 		sampler2D _GrassMap;
 		float4 _GrassMap_ST;
@@ -253,9 +256,9 @@ Shader "Custom/GeometryGrass"
 			float edgeLength = distance(v0, v1);
 
 			float3 edgeCenter = (v0 + v1) * 0.5f;
-			float viewDist = clamp(distance(edgeCenter, _WorldSpaceCameraPos), 5, 30) / _TessellationViewDistance;
+			float viewDist = clamp(distance(edgeCenter, _WorldSpaceCameraPos), _TessellationViewMin, _TessellationViewMax) * (_TessellationGrassDist / 100);
 
-			return edgeLength / (_TessellationGrassDist * viewDist);
+			return edgeLength / viewDist;
 		}
 
 		//Boilerplate tessellation patch function
