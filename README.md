@@ -65,7 +65,7 @@
 ### Tessellation
 
 *   **Density** - The overall maximum amount of tessellation applied
-*   **View Distance** - Controls how much the density fades off with distance from the camera
+*   **View Distance** - Min and maximum distances for LOD fading: minimum determines the distance at which fading starts, upper value determines the distance at which it ends
 
 ### Trimming
 
